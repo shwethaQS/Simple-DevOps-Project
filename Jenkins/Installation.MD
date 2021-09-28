@@ -3,7 +3,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 
 
 ### Prerequisites
-1. EC2 RHEL 7.x Instance [Get help here](https://www.youtube.com/watch?v=KDtS6BzJo3A)
+1. EC2 RHEL 8.x Instance [Get help here](https://www.youtube.com/watch?v=KDtS6BzJo3A)
    - With Internet Access
    - Security Group with Port `8080` open for internet
 1. Java v1.8.x 
@@ -11,6 +11,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 ## Install Java
 We will be using open java for our demo, Get latest version from http://openjdk.java.net/install/
 ```sh
+sudo su
 yum install java-1.8*
 #yum -y install java-1.8.0-openjdk
 ```
