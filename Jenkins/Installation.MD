@@ -63,6 +63,11 @@ systemctl status jenkins
 By default jenkins runs at port `8080`, You can access jenkins at
 ```sh
 http://YOUR-SERVER-PUBLIC-IP:8080
+
+#### On AWS EC2 Instance
+1. Securty Inbound rules: Add port 8080 under "Custom TCP Rule" with ip ranges 0.0.0.0/0 and ::/0
+2. systemctl restart jenkins
+
 ```
 #### Configure Jenkins
 - The default Username is `admin`
