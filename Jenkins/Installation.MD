@@ -45,6 +45,7 @@ rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 yum -y install jenkins
 #if above failes try below:
 yum -y install jenkins --nobest
+
 ```
 
 ### Start Jenkins
@@ -54,6 +55,8 @@ systemctl start jenkins
 
 # Setup Jenkins to start at boot,
 systemctl enable jenkins
+
+systemctl status jenkins
 ```
 
 #### Accessing Jenkins
