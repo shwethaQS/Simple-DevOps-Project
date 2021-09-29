@@ -10,6 +10,8 @@ Download tomcat packages from  https://tomcat.apache.org/download-80.cgi onto /o
   cd /opt
   wget http://mirrors.fibergrid.in/apache/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz
   tar -xvzf /opt/apache-tomcat-8.5.35.tar.gz
+  
+  ps -ef | grep tomcat - to search the tomcat in the processess
 ```
 give executing permissions to startup.sh and shutdown.sh which are under bin. 
 ```sh
