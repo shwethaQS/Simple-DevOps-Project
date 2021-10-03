@@ -63,4 +63,12 @@ goto tomcat home directory and Add below users to conf/tomcat-user.xml file
 	<user username="tomcat" password="s3cret" roles="manager-gui"/>
 ```
 Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
+goto from conf cd /catalina/localhost
+create manager.xml and host-manager.xml
+Add the following:
+<Context privileged="true" antiResourceLocking="false" 
+         docBase="{catalina.home}/webapps/manager">
+    <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
 
+Restart the tomcat
